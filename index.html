@@ -1,53 +1,264 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css" integrity="sha384-8iuq0iaMHpnH2vSyvZMSIqQuUnQA7QM+f6srIdlgBrTSEyd//AWNMyEaSF2yPzNQ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" href="/favicon.ico?v=2" />
-  <script src="https://kit.fontawesome.com/80098b624b.js" crossorigin="anonymous"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140410646-1"></script>
-  <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-140410646-1');
-  </script>
-  <link rel="stylesheet" href="site.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, user-scalable=no, shrink-to-fit=no, height=device-height">
-  <title>Hello 👋</title>
-</head>
-<body class="m-sm-5 m-1 mt-3 mb-3">
-  <div class="container"unselectable="on" onselectstart="return false;" onmousedown="return false;">
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <div class="card">
-          <img src="https://www.gravatar.com/avatar/a928e0a8375d93d165ad90bb860c05d9.png?s=500" alt="Ronan's photo" class="card-img-top">
-          <div class="card-body">
-            <h1 class="card-title">Ronan Rodrigo Nunes</h1>
-            <p class="card-text lead">Software Engineer @ <a href="https://uber.com/faqaudio">Uber</a></p>
-            <p class="card-text">Currently, I work at the Uber App with Swift in the audio recording feature and also creating a library for other features that require the audio resource. My first contact with programming was in the early 2000s, creating scripts for the IRC Clients. Since then, I have never stopped programming. I started my career working with Backend and Frontend and then I migrated to Mobile about 6 years ago. I’m an enthusiast of the software craftsmanship movement, I love creativity, and I always look for an alternative to everything.</p>
-          </div>
-          <div class="list-group list-group-flush">
-            <a href="https://ronanrodrigo.dev/medium" class="list-group-item list-group-item-action lead"><i class="fab fa-medium fa-fw"></i> Medium</a>
-            <a href="https://ronanrodrigo.dev/devto" class="list-group-item list-group-item-action lead"><i class="fab fa-dev fa-fw"></i> dev.to</a>
-            <a href="https://ronanrodrigo.dev/github" class="list-group-item list-group-item-action lead"><i class="fab fa-github-square fa-fw"></i> Github</a>
-            <a href="https://ronanrodrigo.dev/slides" class="list-group-item list-group-item-action lead"><i class="fas fa-chalkboard fa-fw"></i> Slides</a>
-            <a href="https://ronanrodrigo.dev/linkedin" class="list-group-item list-group-item-action lead"><i class="fab fa-linkedin fa-fw"></i> Linkedin</a>
-            <a href="https://ronanrodrigo.dev/telegram" class="list-group-item list-group-item-action lead"><i class="fab fa-telegram fa-fw"></i> Telegram</a>
-            <a href="https://ronanrodrigo.dev/whatsapp" class="list-group-item list-group-item-action lead"><i class="fab fa-whatsapp fa-fw"></i> Whatsapp</a>
-            <a href="facetime://hello@ronanrodrigo.dev" class="list-group-item list-group-item-action lead"><i class="fas fa-video fa-fw"></i> FaceTime</a>
-            <a href="imessage://hello@ronanrodrigo.dev" class="list-group-item list-group-item-action lead"><i class="fas fa-comment fa-fw"></i> iMessage</a>
-            <a href="mailto:email@ronanrodrigo.dev" class="list-group-item list-group-item-action lead"><i class="fas fa-envelope fa-fw"></i> email@ronanrodrigo.dev</a>
-          </div>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ronan's site</title>
+        <meta name="description" content="On my personal site, I work at the Uber App with Swift in the audio recording feature and also creating a library for other features that use audio resources." />
+        <meta name="classification" content="ronan,ronan nunes, ronan rodrigo, ronan rodrigo nunes,resume,swift,ios,avfoundation,nubank,uber" />
+        <meta name="robots" content="follow" />
+        <meta name="author" content="Ronan Rodrigo Nunes" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="ronanrodrigo.dev" />
+        <meta property="og:title" content="Ronan's site" />
+        <meta property="og:image" content="https://www.gravatar.com/avatar/a928e0a8375d93d165ad90bb860c05d9.png?s=500" />
+        <meta property="og:image:alt" content="Ronan's photo" />
+        <meta property="og:description" content="Ronan's personal site, he works at the Uber App with Swift in the audio recording feature and also creating a library for other teams that use audio resources." />
+        <meta property="og:site_name" content="Ronan's site" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ronan's site" />
+        <meta name="twitter:creator" content="@ronanrodrigodev" />
+        <meta name="twitter:description" content="Ronan's personal site, he works at the Uber App with Swift in the audio recording feature and also creating a library for other teams that use audio resources." />
+        <meta name="twitter:url" content="https://ronanrodrigo.dev" />
+        <meta name="twitter:image" content="https://www.gravatar.com/avatar/a928e0a8375d93d165ad90bb860c05d9.png?s=500" />
+        <meta name="twitter:image:alt" content="Ronan's photo" />
+        <meta name="pinterest" content="nopin" />
+        <meta name="apple-mobile-web-app-title" content="Ronan's Site" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <style type="text/css">
+            @media (max-width: 767.98px) {
+                .card *, .card {
+                    border-radius: 0 !important;
+                }
+            }
+        </style>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-W2T2VTD");
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140410646-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "UA-140410646-1");
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="HandheldFriendly" content="true" />
+        <link rel="stylesheet" href="css/ligth.css" media="print" />
+        <link rel="stylesheet" href="css/dark.css" media="screen" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" href="/favicon.ico?v=2" />
+        <script src="https://kit.fontawesome.com/80098b624b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="site.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, user-scalable=no, shrink-to-fit=no, height=device-height" />
+    </head>
+    <body>
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2T2VTD" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+        </noscript>
+
+        <nav id="navbar-main" class="navbar navbar-expand-lg invisible d-none">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-ellipsis-h text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="d-flex justify-content-center">
+            <div class="container-lg mt-md-2">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 gx-md-2 gx-lg-3 gx-0 mb-3">
+                        <div class="card border-0">
+                            <img src="https://www.gravatar.com/avatar/a928e0a8375d93d165ad90bb860c05d9.png?s=500" alt="Ronan's photo" class="card-img-top d-none d-md-block border-0" />
+                            <div class="text-center"><img src="https://www.gravatar.com/avatar/a928e0a8375d93d165ad90bb860c05d9.png?s=500" alt="Ronan's photo" class="card-img-top mt-3 w-50 rounded-circle d-md-none" /></div>
+                            <div class="card-body">
+                                <h1 class="card-title">Ronan Rodrigo Nunes</h1>
+                                <h2 class="card-subtitle mb-3">Software Engineer @ <a href="https://uber.com/faqaudio">Uber</a></h2>
+                                <p class="card-text">
+                                    Currently, I work at the Uber App with Swift in the audio recording feature and also creating a library for other features that require the audio resource. My first contact with programming was in the
+                                    early 2000s, creating scripts for the IRC Clients. Since then, I have never stopped programming. I started my career working with Backend and Frontend and then I migrated to Mobile about 6 years ago. I’m
+                                    an enthusiast of the software craftsmanship movement, I love creativity, and I always look for an alternative to everything.
+                                </p>
+                            </div>
+                            <div class="list-group list-group-flush d-print-none">
+                                <a href="https://ronanrodrigo.dev/medium" class="list-group-item list-group-item-action lead"><i class="fab fa-medium fa-fw"></i> Medium</a>
+                                <a href="https://ronanrodrigo.dev/devto" class="list-group-item list-group-item-action lead"><i class="fab fa-dev fa-fw"></i> dev.to</a>
+                                <a href="https://ronanrodrigo.dev/github" class="list-group-item list-group-item-action lead"><i class="fab fa-github-square fa-fw"></i> Github</a>
+                                <a href="https://ronanrodrigo.dev/slides" class="list-group-item list-group-item-action lead"><i class="fas fa-chalkboard fa-fw"></i> Slides</a>
+                                <a href="https://ronanrodrigo.dev/linkedin" class="list-group-item list-group-item-action lead"><i class="fab fa-linkedin fa-fw"></i> Linkedin</a>
+                                <a href="https://ronanrodrigo.dev/telegram" class="list-group-item list-group-item-action lead"><i class="fab fa-telegram fa-fw"></i> Telegram</a>
+                                <a href="https://ronanrodrigo.dev/whatsapp" class="list-group-item list-group-item-action lead"><i class="fab fa-whatsapp fa-fw"></i> Whatsapp</a>
+                                <a href="facetime://hello@ronanrodrigo.dev" class="list-group-item list-group-item-action lead"><i class="fas fa-video fa-fw"></i> FaceTime</a>
+                                <a href="imessage://hello@ronanrodrigo.dev" class="list-group-item list-group-item-action lead"><i class="fas fa-comment fa-fw"></i> iMessage</a>
+                                <a href="mailto:email@ronanrodrigo.dev" class="list-group-item list-group-item-action lead"><i class="fas fa-envelope fa-fw"></i> email@ronanrodrigo.dev</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-9 gx-md-2 gx-lg-3 gx-0" data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="0" tabindex="0" rounded-0>
+                        <div class="card border-0">
+                            <div class="card-header  bg-transparent" id="experience">Experience</div>
+                            <div class="card-body">
+                                <h1 class="card-title">Uber</h1>
+                                <div class="row">
+                                    <h2 class="mb-3 col-sm-6 lead">Software Engineer</h2>
+                                    <h2 class="mb-3 col-sm-6 text-sm-end lead">Apr 2019 – Present</h2>
+                                </div>
+                                <p class="card-text">
+                                    As a Software Engineer from the Safety Media Platform team, I am working on key features for Audio Recording, designing, architecting and developing, for iOS apps for drivers and passengers. This is one
+                                    of the ways to provide safe rides to all of our customers. As part of these responsibilities, I engage in the following activities:
+                                </p>
+                                <ul>
+                                    <li>Create an audio framework to other audio features</li>
+                                    <li>Teach training sessions for new teammates;</li>
+                                    <li>Design and architecture services that span across Uber’s stack and multiple parts of the Safety organization;</li>
+                                    <li>Partner with fellow engineers to innovate, architect, develop and scale Safety’s product and platform solutions that impact millions of Uber riders and drivers;</li>
+                                    <li>Work with Product Managers and Designers to nail core Safety user experiences;</li>
+                                    <li>Mentor and support my fellow teammates, as well as help, review the team’s technical design, code, and documentation. And also presenting some design patterns and testing methodologies;</li>
+                                    <li>Interviews with software engineering candidates.</li>
+                                </ul>
+                                <span class="badge">Swift</span> <span class="badge">AVFoundation</span> <span class="badge">Unit Tests</span> <span class="badge">Software Architecture</span> <span class="badge">Framework Creation</span>
+                                <span class="badge">Interview</span> <span class="badge">Pair Programming</span>
+                            </div>
+                            <hr />
+                            <div class="card-body">
+                                <h1 class="card-title">Nubank</h1>
+                                <div class="row">
+                                    <h2 class="mb-3 col-sm-6 lead">Software Engineer</h2>
+                                    <h2 class="mb-3 col-sm-6 text-sm-end lead">Nov 2017 – Mar 2019</h2>
+                                </div>
+                                <p class="card-text">
+                                    I worked on the Member Get Member (MGM) and Authorizations teams. In MGM I worked from the conception of ideas to the analysis of data in production. All with the aim of increasing user engagement with
+                                    Nubank, making them invite their contacts to also be customers. And in Authorizations, I was one of those responsible for developing the Virtual Card feature in the iOS app.
+                                </p>
+                                <span class="badge">XCTest</span> <span class="badge">TDD</span> <span class="badge">Unit Tests</span> <span class="badge">UI Tests</span> <span class="badge">Hypermedia API integration</span>
+                                <span class="badge">Swift</span> <span class="badge">Frameworks</span> <span class="badge">Continuous Integration</span> <span class="badge">Fastlane</span> <span class="badge">Coded views</span>
+                                <span class="badge">Clean Code</span> <span class="badge">Clean Architecture</span> <span class="badge">Design patterns</span> <span class="badge">Agile and Scrum</span>
+                            </div>
+                            <hr />
+                            <div class="card-body">
+                                <h1 class="card-title">Concrete Solutions</h1>
+                                <div class="row">
+                                    <h2 class="mb-3 col-sm-6 lead">iOS App Developer</h2>
+                                    <h2 class="mb-3 col-sm-6 text-sm-end lead">Dec 2016 – Oct 2017</h2>
+                                </div>
+                                <p class="card-text">
+                                    iOS applications creation with agile management techniques and customer relationships. I worked in two main projects, one was an e-commerce for the Carrefour grocery stores. And the second project was an
+                                    audio streaming APP for the CBN radios. Both projects for the iOS platform and with Swift language.
+                                </p>
+                                <span class="badge">XCTest</span> <span class="badge">TDD</span> <span class="badge">Unit Tests</span> <span class="badge">UI Tests</span> <span class="badge">Audio Streaming</span>
+                                <span class="badge">Rest API integration</span> <span class="badge">Swift</span> <span class="badge">Frameworks</span> <span class="badge">Continuous Integration</span> <span class="badge">Fastlane</span>
+                                <span class="badge">Storyboards e XIBs</span> <span class="badge">Coded views</span> <span class="badge">Clean Code</span> <span class="badge">Design patterns</span>
+                                <span class="badge">Git and Git Flow</span> <span class="badge">Apple guidelines</span> <span class="badge">Agile and Scrum.</span>
+                            </div>
+                            <hr />
+                            <div class="card-body">
+                                <h1 class="card-title">Meus Pedidos</h1>
+                                <div class="row">
+                                    <h2 class="mb-3 col-sm-6 lead">Software Developer</h2>
+                                    <h2 class="mb-3 col-sm-6 text-sm-end lead">Jul 2015 – Nov 2016</h2>
+                                </div>
+                                <p class="card-text">
+                                    I worked as a software developer for web (frontend and backend) and mobile on a solution for sales representatives. One important feature that I worked on, was one to measure the order profitability
+                                    implementing the feature on mobile, backend, and frontend. I programmed with Xamarin/C#, Python, and JavaScript.
+                                </p>
+                                <span class="badge">Android app development</span> <span class="badge">iOS app development</span> <span class="badge">Xamarin</span> <span class="badge">C#</span> <span class="badge">Python</span>
+                                <span class="badge">Django</span> <span class="badge">Clean Architecture</span> <span class="badge">Rest API integration</span> <span class="badge">Rest API development</span> <span class="badge">TDD</span>
+                                <span class="badge">Unit Tests</span> <span class="badge">Clean Code</span> <span class="badge">Design patterns</span> <span class="badge">Git and Git Flow</span> <span class="badge">Apple guidelines</span>
+                                <span class="badge">Agile and Scrum</span>
+                            </div>
+                            <hr />
+                            <div class="card-body">
+                                <h1 class="card-title">PeopleOne Technology Services</h1>
+                                <div class="row">
+                                    <h2 class="mb-3 col-sm-6 lead">Software Developer</h2>
+                                    <h2 class="mb-3 col-sm-6 text-sm-end lead">Feb 2013 – Apr 2015</h2>
+                                </div>
+                                <p class="card-text">
+                                    I worked as a web, iOS, and macOS developer programming in Ruby on Rails, Swift, and Coffee Script. Was a great opportunity to use MongoDB. The most curious project was a solution similar to a social
+                                    network but for horse owners. And the most challenging, mostly because of the MongoDB usage and macOS apps development, the intention was to measure teams productivity based on machine usages.
+                                </p>
+                                <span class="badge">Ruby</span> <span class="badge">Rails</span> <span class="badge">MVC</span> <span class="badge">Integration Tests</span> <span class="badge">MongoDB</span>
+                                <span class="badge">PostgresSQ</span> <span class="badge">Jenkins</span> <span class="badge">SASS</span> <span class="badge">Coffee Script</span> <span class="badge">Git</span>
+                                <span class="badge">Apple guidelines</span> <span class="badge">Agile and Scrum</span>
+                            </div>
+                            <hr />
+                            <div class="card-body">
+                                <h1 class="card-title">Choperia Capim Teimoso</h1>
+                                <div class="row">
+                                    <h2 class="mb-3 col-sm-6 lead">Manager</h2>
+                                    <h2 class="mb-3 col-sm-6 text-sm-end lead">Jan 2010 – Dec 2012</h2>
+                                </div>
+                                <p class="card-text">
+                                    Yes, I had a bar. Now, I know how to make a classic Brazilian drink, caipirinha! I worked in all departments since, promotions, music events, publicity, social network, barman, kitchen assistant and many
+                                    other stufs. Was an excellent opportunity improve my communication skills.
+                                </p>
+                                <span class="badge">Caipirinha</span> <span class="badge">Chopp</span> <span class="badge">Shrimps</span> <span class="badge">MPB</span>
+                            </div>
+                            <hr />
+                            <div class="card-body">
+                                <h1 class="card-title">Euax</h1>
+                                <div class="row">
+                                    <h2 class="mb-3 col-sm-6 lead">Software Developer</h2>
+                                    <h2 class="mb-3 col-sm-6 text-sm-end lead">Mar 2011 – Mar 2012</h2>
+                                </div>
+                                <p class="card-text">
+                                    Because it was a project management consulting company was an excellent opportunity to learn about Scrum with the bests, where some companies contract them to learn about and I received it for "free". I
+                                    participated in two nice web-apps, a social network for events (twygo.com) and a collaborative network for project management (artia.com) was my first professional contact with Ruby on Rails.
+                                </p>
+                                <span class="badge">RubyOnRails</span> <span class="badge">MySQ</span> <span class="badge">Git</span> <span class="badge">Scrum</span>
+                            </div>
+                            <hr />
+                            <div class="card-body">
+                                <h1 class="card-title">Neomind</h1>
+                                <div class="row">
+                                    <h2 class="mb-3 col-sm-6 lead">Software Developer</h2>
+                                    <h2 class="mb-3 col-sm-6 text-sm-end lead">Nov 2009 – Jul 2010</h2>
+                                </div>
+                                <p class="card-text">My first software developer job, where I work in a Business Intelligence feature on a online document management, widely used by governments and large companies.</p>
+                                <span class="badge">Java</span> <span class="badge">MySQ</span> <span class="badge">SVN</span> <span class="badge">jQuery</span> <span class="badge">jBoss</span> <span class="badge">ActionScript</span>
+                            </div>
+                            <hr />
+                            <div class="card-body">
+                                <h1 class="card-title">TOTVS</h1>
+                                <div class="row">
+                                    <h2 class="mb-3 col-sm-6 lead">Technical Software Support</h2>
+                                    <h2 class="mb-3 col-sm-6 text-sm-end lead">Oct 2007 – Oct 2009</h2>
+                                </div>
+                                <p class="card-text">
+                                    Technical support on Datasul EMS in technology module and beyond WebDESK and ByYou. I was very embarrassed and shy when I started this job, it was a good opportunity to improve on these points. This
+                                    company (Datasul) was purchased by TOTVS in 2008.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
 </html>
+
