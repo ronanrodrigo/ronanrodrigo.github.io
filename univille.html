@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <title>Hello 👋 — Univille Resources</title>
+    <link rel="icon" href="/favicon.ico?v=2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140410646-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-140410646-1');
+    </script>
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+        .resources-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 80px 24px 40px;
+            min-height: 100vh;
+        }
+        .resources-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 12px;
+        }
+        .resources-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+        .resources-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .resource-link {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all var(--transition);
+            box-shadow: var(--shadow);
+        }
+        .resource-link:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateX(6px);
+        }
+        .resource-icon {
+            flex-shrink: 0;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+            opacity: 0.5;
+            transition: opacity var(--transition);
+        }
+        .resource-link:hover .resource-icon {
+            opacity: 1;
+        }
+        .back-link {
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="resources-container">
+        <h1 class="resources-title">Hello 👋</h1>
+        <p class="resources-subtitle">Resources & recommendations</p>
+        <div class="resources-list">
+            <a href="https://speakerdeck.com/ronanrodrigo/metodos-tecnicas-e-ferramentas-de-desenvolvimento-de-software" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Métodos, técnicas e ferramentas de desenvolvimento de software
+            </a>
+            <a href="https://www.inc.com/jim-schleckser/why-netflix-doesn-t-tolerate-brilliant-jerks.html" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Why Netflix doesn't tolerate brilliant jerks
+            </a>
+            <a href="https://medium.com/@nayaramassi/mulheres-s%C3%ADndrome-do-impostor-e-profissionais-de-tecnologia-a49f35abab7b" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Mulheres, síndrome do impostor e profissionais de tecnologia
+            </a>
+            <a href="https://medium.com/@nayaramassi/autoconhecimento-a-mais-importante-das-soft-skills-2930ce3f20a1" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Autoconhecimento: a mais importante das soft skills
+            </a>
+            <a href="http://mobster.cc/" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Mobster
+            </a>
+            <a href="https://medium.com/@ronanrodrigo/siga-por-este-caminho-um-guia-de-estudos-sobre-desenvolvimento-de-software-db857c4f04f9" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Guia de estudos sobre desenvolvimento de software com Swift
+            </a>
+            <a href="https://www.amazon.com.br/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Clean Code — Robert C. Martin
+            </a>
+            <a href="https://www.amazon.com.br/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Clean Architecture — Robert C. Martin
+            </a>
+            <a href="https://www.amazon.com.br/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073/" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                The Clean Coder — Robert C. Martin
+            </a>
+            <a href="https://www.amazon.com.br/Passionate-Programmer-Remarkable-Development-Pragmatic-ebook/dp/B00AYQNR5U" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                The Passionate Programmer — Chad Fowler
+            </a>
+            <a href="https://www.amazon.com.br/Extreme-Programming-Explained-Embrace-English-ebook/dp/B00N1ZN6C0" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Extreme Programming Explained — Kent Beck
+            </a>
+            <a href="https://www.amazon.com.br/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Design Patterns — Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+            </a>
+            <a href="https://www.amazon.com.br/Learn-You-Haskell-Great-Good-ebook/dp/B004VB3V0K" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Learn You a Haskell for Great Good — Miran Lipovača
+            </a>
+            <a href="https://www.amazon.com.br/Clojure-Brave-True-Ultimate-Programmer-ebook/dp/B015P7F92G" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Clojure for the Brave and True — Daniel Higginbotham
+            </a>
+            <a href="https://www.amazon.com.br/Cracking-Coding-Interview-Programming-Questions/dp/0984782850" class="resource-link" target="_blank" rel="noopener">
+                <span class="resource-icon"></span>
+                Cracking the Coding Interview — Gayle Laakmann McDowell
+            </a>
+        </div>
+        <a href="/" class="back-link">← Back to home</a>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>

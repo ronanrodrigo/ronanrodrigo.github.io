@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <title>Talk to Ronan 👋</title>
+    <link rel="icon" href="/favicon.ico?v=2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140410646-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-140410646-1');
+    </script>
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+        .talk-container {
+            max-width: 560px;
+            margin: 0 auto;
+            padding: 80px 24px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .talk-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 12px;
+        }
+        .talk-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 48px;
+        }
+        .talk-links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .talk-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px 32px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            color: var(--text);
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all var(--transition);
+            box-shadow: var(--shadow);
+        }
+        .talk-link:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px var(--accent-glow);
+        }
+        .talk-link svg {
+            flex-shrink: 0;
+        }
+        .back-link {
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="talk-container">
+        <h1 class="talk-title">Talk to Ronan 👋</h1>
+        <p class="talk-subtitle">Pick a channel and let's chat</p>
+        <div class="talk-links">
+            <a href="/hangouts" class="talk-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.16 2 11.2c0 2.6 1.32 4.92 3.36 6.44V22l3.72-2.16c.92.2 1.92.32 2.92.32 5.52 0 10-4.16 10-9.2S17.52 2 12 2zm-2 10.4c-.72 0-1.32-.6-1.32-1.32S9.28 9.76 10 9.76s1.32.6 1.32 1.32S10.72 12.4 10 12.4zm4 0c-.72 0-1.32-.6-1.32-1.32S13.28 9.76 14 9.76s1.32.6 1.32 1.32S14.72 12.4 14 12.4z"/></svg>
+                Google Meet
+            </a>
+            <a href="/zoom" class="talk-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.485 24l13.563-9.615L24 24H.485zm-.485-.52L11.262 12 .485 1.03V23.48zM.485 0l11.262 9.615L.485 0zm14.846 9.615L24 0H.485l14.846 9.615z"/></svg>
+                Zoom
+            </a>
+            <a href="/telegram" class="talk-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.163-.17 3.016-2.765 3.074-3.003.008-.033.01-.15-.056-.212s-.164-.041-.235-.024c-.1.023-1.622 1.03-4.572 3.014-.433.297-.825.443-1.176.438-.387-.005-1.131-.219-1.685-.4-.679-.22-1.217-.337-1.169-.713.024-.184.292-.373.802-.567 3.14-1.367 5.234-2.268 6.28-2.703 2.99-1.243 3.61-1.459 4.013-1.466z"/></svg>
+                Telegram
+            </a>
+            <a href="facetime://ronan.nunes@me.com" class="talk-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M22 8l-6 4 6 4V8z"/></svg>
+                FaceTime
+            </a>
+        </div>
+        <a href="/" class="back-link">← Back to home</a>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>
