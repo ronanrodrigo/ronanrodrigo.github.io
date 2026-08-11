@@ -5,6 +5,7 @@
 ## Perfil
 
 - [Página inicial](https://ronanrodrigo.dev/): perfil profissional e resumo de experiência.
+- [Guia de navegação para agentes](https://ronanrodrigo.dev/agent-guide.md): fluxo de consulta, escopo e limitações do site.
 - [Experiência](https://ronanrodrigo.dev/#experience): histórico profissional.
 - [Formação](https://ronanrodrigo.dev/#education): educação e formação acadêmica.
 - [Publicações](https://ronanrodrigo.dev/#publications): artigos técnicos.

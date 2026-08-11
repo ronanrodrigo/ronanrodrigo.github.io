@@ -44,6 +44,7 @@
   ],
   "machine_readable_resources": {
     "llms_txt": "https://ronanrodrigo.dev/llms.txt",
+    "agent_guide": "https://ronanrodrigo.dev/agent-guide.md",
     "sitemap_xml": "https://ronanrodrigo.dev/sitemap.xml",
     "sitemap_markdown": "https://ronanrodrigo.dev/sitemap.md",
     "robots_txt": "https://ronanrodrigo.dev/robots.txt"

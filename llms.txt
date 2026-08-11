@@ -7,6 +7,7 @@ Use este arquivo como índice inicial. O conteúdo é público e somente para le
 ## Comece aqui
 
 - [Perfil profissional](https://ronanrodrigo.dev/): experiência, formação e publicações de Ronan Rodrigo Nunes.
+- [Guia de navegação do site](https://ronanrodrigo.dev/agent-guide.md): fluxo, escopo e limitações para leitores automatizados.
 - [Notas técnicas](https://ronanrodrigo.dev/notes/): coleção de notas sobre inteligência artificial, agentes, programação, ferramentas, design e tecnologia.
 - [Guia para agentes das notas](https://ronanrodrigo.dev/notes/agent/): escopo, recursos e fluxo recomendado para consultar o Notes.
 - [Índice JSON do site](https://ronanrodrigo.dev/index.json): descrição estruturada do site, da pessoa e das principais seções.
