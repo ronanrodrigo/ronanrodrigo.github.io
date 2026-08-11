@@ -22,6 +22,15 @@
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+    // Add Notes link to the top navigation
+    const navLinks = document.querySelector('.nav-links');
+    if (navLinks) {
+        const notesLink = document.createElement('a');
+        notesLink.href = 'https://ronanrodrigo.dev/notes/';
+        notesLink.textContent = 'Notes';
+        navLinks.appendChild(notesLink);
+    }
+
     // Navbar scroll effect
     const navbar = document.getElementById('navbar');
     let lastScroll = 0;
