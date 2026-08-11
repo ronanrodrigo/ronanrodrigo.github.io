@@ -1,0 +1,37 @@
+# Ronan Rodrigo Nunes
+
+> Site pessoal de Ronan Rodrigo Nunes, Principal Software Engineer, com perfil profissional, experiência em desenvolvimento de software e links para notas técnicas sobre IA, agentes, programação e tecnologia.
+
+Use este arquivo como índice inicial. O conteúdo é público e somente para leitura. Para informações profissionais, priorize o perfil abaixo; para curadoria técnica, consulte a seção de notas e o guia de navegação específico do Notes.
+
+## Comece aqui
+
+- [Perfil profissional](https://ronanrodrigo.dev/): experiência, formação e publicações de Ronan Rodrigo Nunes.
+- [Notas técnicas](https://ronanrodrigo.dev/notes/): coleção de notas sobre inteligência artificial, agentes, programação, ferramentas, design e tecnologia.
+- [Guia para agentes das notas](https://ronanrodrigo.dev/notes/agent/): escopo, recursos e fluxo recomendado para consultar o Notes.
+- [Índice JSON do site](https://ronanrodrigo.dev/index.json): descrição estruturada do site, da pessoa e das principais seções.
+- [Mapa do site em Markdown](https://ronanrodrigo.dev/sitemap.md): índice textual das URLs públicas.
+
+## Experiência e formação
+
+- [Experiência](https://ronanrodrigo.dev/#experience): histórico profissional em engenharia de software, mobile, Swift/iOS, React Native, Go e observabilidade.
+- [Formação](https://ronanrodrigo.dev/#education): formação acadêmica em Segurança de Sistemas de Computação e Informação.
+- [Publicações](https://ronanrodrigo.dev/#publications): artigos técnicos publicados em fontes externas.
+
+## Recursos de contato e perfis
+
+- [GitHub](https://ronanrodrigo.dev/github): perfil de código no GitHub.
+- [LinkedIn](https://ronanrodrigo.dev/linkedin): perfil profissional no LinkedIn.
+- [DEV Community](https://ronanrodrigo.dev/devto): perfil na comunidade DEV.
+- [Medium](https://ronanrodrigo.dev/medium): publicações no Medium.
+- [Falar com Ronan](https://ronanrodrigo.dev/live): página com canais de contato disponíveis.
+
+## Optional
+
+- [Univille](https://ronanrodrigo.dev/univille): página independente com recursos de uma palestra ou aula.
+- [Sitemap XML](https://ronanrodrigo.dev/sitemap.xml): URLs públicas em XML.
+- [Robots](https://ronanrodrigo.dev/robots.txt): política de rastreamento e localização do sitemap.
+
+## Nota de escopo
+
+Os links de contato podem redirecionar para serviços externos. As notas técnicas são uma camada separada do site pessoal e possuem seu próprio `llms.txt`, `index.json`, sitemap e guia para agentes.
