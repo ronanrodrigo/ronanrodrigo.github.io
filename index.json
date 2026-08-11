@@ -1,0 +1,53 @@
+{
+  "name": "Ronan Rodrigo Nunes",
+  "url": "https://ronanrodrigo.dev/",
+  "type": "personal-website",
+  "language": "en",
+  "description": "Personal professional site of Ronan Rodrigo Nunes, Principal Software Engineer.",
+  "person": {
+    "name": "Ronan Rodrigo Nunes",
+    "jobTitle": "Principal Software Engineer",
+    "worksFor": {
+      "name": "PicPay",
+      "url": "https://picpay.com/"
+    },
+    "url": "https://ronanrodrigo.dev/"
+  },
+  "sections": [
+    {
+      "id": "experience",
+      "title": "Experience",
+      "url": "https://ronanrodrigo.dev/#experience",
+      "description": "Professional experience in software engineering, mobile, Swift/iOS, React Native, Go and observability."
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "url": "https://ronanrodrigo.dev/#education",
+      "description": "Academic background in Computer and Information Systems Security / Information Assurance."
+    },
+    {
+      "id": "publications",
+      "title": "Publications",
+      "url": "https://ronanrodrigo.dev/#publications",
+      "description": "Technical articles published on external platforms."
+    },
+    {
+      "id": "notes",
+      "title": "Technical notes",
+      "url": "https://ronanrodrigo.dev/notes/",
+      "description": "Curated notes about artificial intelligence, agents, programming, tools, design and technology.",
+      "agent_guide": "https://ronanrodrigo.dev/notes/agent/",
+      "llms_txt": "https://ronanrodrigo.dev/notes/llms.txt",
+      "index_json": "https://ronanrodrigo.dev/notes/index.json"
+    }
+  ],
+  "machine_readable_resources": {
+    "llms_txt": "https://ronanrodrigo.dev/llms.txt",
+    "agent_guide": "https://ronanrodrigo.dev/agent-guide.md",
+    "sitemap_xml": "https://ronanrodrigo.dev/sitemap.xml",
+    "sitemap_markdown": "https://ronanrodrigo.dev/sitemap.md",
+    "robots_txt": "https://ronanrodrigo.dev/robots.txt"
+  },
+  "read_only": true
+}

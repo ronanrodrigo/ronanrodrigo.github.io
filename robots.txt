@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /index.json
+Allow: /sitemap.md
+Allow: /notes/
+
+Sitemap: https://ronanrodrigo.dev/sitemap.xml
