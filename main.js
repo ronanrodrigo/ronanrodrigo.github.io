@@ -1,12 +1,24 @@
-// Google Analytics 4
+// Analytics: Google Analytics 4
 (function() {
-    // Remove the obsolete inline Firebase module that contained an invalid
-    // masked apiKey. This runs before the parser reaches that script.
-    document.querySelectorAll('script[type="module"]').forEach((script) => {
-        if (script.textContent.includes('apiKey: "***"')) {
-            script.remove();
-        }
+    const removeInvalidFirebaseSnippet = (root) => {
+        const scripts = root.querySelectorAll
+            ? root.querySelectorAll('script[type="module"]')
+            : [];
+
+        scripts.forEach((script) => {
+            if (script.textContent.includes('apiKey: "***"')) {
+                script.remove();
+            }
+        });
+    };
+
+    // The legacy inline Firebase snippet appears after this script in index.html.
+    // Remove it as soon as the parser adds it to the document.
+    removeInvalidFirebaseSnippet(document);
+    const scriptObserver = new MutationObserver(() => {
+        removeInvalidFirebaseSnippet(document);
     });
+    scriptObserver.observe(document.documentElement, { childList: true, subtree: true });
 
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function() {
@@ -30,7 +42,6 @@
     const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;
 
-    // Check for saved theme or system preference
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         html.setAttribute('data-theme', savedTheme);
@@ -45,11 +56,9 @@
         localStorage.setItem('theme', next);
     });
 
-    // Set current year in footer
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // Add Notes link to the top navigation
     const navLinks = document.querySelector('.nav-links');
     if (navLinks) {
         const notesLink = document.createElement('a');
@@ -58,27 +67,12 @@
         navLinks.appendChild(notesLink);
     }
 
-    // Navbar scroll effect
     const navbar = document.getElementById('navbar');
-    let lastScroll = 0;
-
     window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > 100) {
-            navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
-        } else {
-            navbar.style.boxShadow = 'none';
-        }
-
-        lastScroll = currentScroll;
+        navbar.style.boxShadow = window.pageYOffset > 100
+            ? '0 4px 20px rgba(0,0,0,0.15)'
+            : 'none';
     });
-
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -87,9 +81,8 @@
                 entry.target.style.transform = 'translateY(0)';
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-    // Observe timeline items for scroll animation
     document.querySelectorAll('.timeline-item').forEach((item, index) => {
         item.style.opacity = '0';
         item.style.transform = 'translateY(20px)';
@@ -97,7 +90,6 @@
         observer.observe(item);
     });
 
-    // Observe publications
     document.querySelectorAll('.publications-list li').forEach((item, index) => {
         item.style.opacity = '0';
         item.style.transform = 'translateY(15px)';
