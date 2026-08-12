@@ -1,28 +1,10 @@
-// Analytics configuration
+// Google Analytics 4
 (function() {
     window.dataLayer = window.dataLayer || [];
-    window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+    window.gtag = window.gtag || function() {
+        window.dataLayer.push(arguments);
+    };
     window.gtag('config', 'G-0TE9HBV804');
-
-    // Initialize a named Firebase app so this remains safe alongside
-    // the existing inline Firebase initialization in index.html.
-    import('https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js')
-        .then(({ initializeApp }) => import('https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js')
-            .then(({ getAnalytics }) => {
-                const firebaseConfig = {
-                    apiKey: 'AIzaSyC5UXudhyrm7MAcV3AYF2LzDFxvsh--AbY',
-                    authDomain: 'ronanrodrigo-dev.firebaseapp.com',
-                    projectId: 'ronanrodrigo-dev',
-                    storageBucket: 'ronanrodrigo-dev.firebasestorage.app',
-                    messagingSenderId: '42504195489',
-                    appId: '1:42504195489:web:fd3a6d54cbcbac5ef84fe0',
-                    measurementId: 'G-0TE9HBV804'
-                };
-
-                const app = initializeApp(firebaseConfig, 'analytics');
-                getAnalytics(app);
-            }))
-        .catch((error) => console.error('Firebase Analytics initialization failed:', error));
 })();
 
 // Theme management
