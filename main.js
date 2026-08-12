@@ -1,40 +1,33 @@
-// Analytics: Google Analytics 4
+// Google Analytics 4
 (function() {
-    const removeInvalidFirebaseSnippet = (root) => {
-        const scripts = root.querySelectorAll
-            ? root.querySelectorAll('script[type="module"]')
-            : [];
-
-        scripts.forEach((script) => {
-            if (script.textContent.includes('apiKey: "***"')) {
-                script.remove();
-            }
-        });
-    };
-
-    // The legacy inline Firebase snippet appears after this script in index.html.
-    // Remove it as soon as the parser adds it to the document.
-    removeInvalidFirebaseSnippet(document);
-    const scriptObserver = new MutationObserver(() => {
-        removeInvalidFirebaseSnippet(document);
-    });
-    scriptObserver.observe(document.documentElement, { childList: true, subtree: true });
-
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function() {
         window.dataLayer.push(arguments);
     };
 
-    if (!document.querySelector('script[data-ga4="G-0TE9HBV804"]')) {
+    const measurementId = 'G-0TE9HBV804';
+    const existingScript = document.querySelector(`script[src*="googletagmanager.com/gtag/js?id=${measurementId}"]`);
+
+    const configure = () => {
+        window.gtag('js', new Date());
+        window.gtag('config', measurementId, {
+            page_path: window.location.pathname + window.location.search,
+            page_title: document.title,
+            page_location: window.location.href,
+            send_page_view: true
+        });
+    };
+
+    if (existingScript) {
+        configure();
+    } else {
         const gaScript = document.createElement('script');
         gaScript.async = true;
-        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-0TE9HBV804';
-        gaScript.dataset.ga4 = 'G-0TE9HBV804';
+        gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+        gaScript.onload = configure;
+        gaScript.onerror = () => console.error('Google Analytics script could not be loaded.');
         document.head.appendChild(gaScript);
     }
-
-    window.gtag('js', new Date());
-    window.gtag('config', 'G-0TE9HBV804');
 })();
 
 // Theme management
