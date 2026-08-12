@@ -6,26 +6,27 @@
     };
 
     const measurementId = 'G-0TE9HBV804';
-    const existingScript = document.querySelector(`script[src*="googletagmanager.com/gtag/js?id=${measurementId}"]`);
+    const gaScriptSelector = 'script[src*="googletagmanager.com/gtag/js"]';
+    const existingScript = document.querySelector(gaScriptSelector);
 
-    const configure = () => {
+    const sendPageView = () => {
         window.gtag('js', new Date());
         window.gtag('config', measurementId, {
-            page_path: window.location.pathname + window.location.search,
             page_title: document.title,
             page_location: window.location.href,
+            page_path: window.location.pathname + window.location.search,
             send_page_view: true
         });
     };
 
-    if (existingScript) {
-        configure();
+    if (existingScript && existingScript.src.includes(measurementId)) {
+        sendPageView();
     } else {
         const gaScript = document.createElement('script');
         gaScript.async = true;
         gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-        gaScript.onload = configure;
-        gaScript.onerror = () => console.error('Google Analytics script could not be loaded.');
+        gaScript.onload = sendPageView;
+        gaScript.onerror = () => console.error('Google Analytics could not be loaded.');
         document.head.appendChild(gaScript);
     }
 })();
@@ -42,18 +43,20 @@
         html.setAttribute('data-theme', 'light');
     }
 
-    themeToggle.addEventListener('click', () => {
-        const current = html.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
-        html.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-    });
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+    }
 
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
     const navLinks = document.querySelector('.nav-links');
-    if (navLinks) {
+    if (navLinks && !navLinks.querySelector('a[href="https://ronanrodrigo.dev/notes/"]')) {
         const notesLink = document.createElement('a');
         notesLink.href = 'https://ronanrodrigo.dev/notes/';
         notesLink.textContent = 'Notes';
@@ -61,11 +64,13 @@
     }
 
     const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        navbar.style.boxShadow = window.pageYOffset > 100
-            ? '0 4px 20px rgba(0,0,0,0.15)'
-            : 'none';
-    });
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            navbar.style.boxShadow = window.pageYOffset > 100
+                ? '0 4px 20px rgba(0,0,0,0.15)'
+                : 'none';
+        });
+    }
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
