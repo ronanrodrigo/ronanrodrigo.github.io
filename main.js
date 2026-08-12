@@ -1,9 +1,27 @@
 // Google Analytics 4
 (function() {
+    // Remove the obsolete inline Firebase module that contained an invalid
+    // masked apiKey. This runs before the parser reaches that script.
+    document.querySelectorAll('script[type="module"]').forEach((script) => {
+        if (script.textContent.includes('apiKey: "***"')) {
+            script.remove();
+        }
+    });
+
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function() {
         window.dataLayer.push(arguments);
     };
+
+    if (!document.querySelector('script[data-ga4="G-0TE9HBV804"]')) {
+        const gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-0TE9HBV804';
+        gaScript.dataset.ga4 = 'G-0TE9HBV804';
+        document.head.appendChild(gaScript);
+    }
+
+    window.gtag('js', new Date());
     window.gtag('config', 'G-0TE9HBV804');
 })();
 
