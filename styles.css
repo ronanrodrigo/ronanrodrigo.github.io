@@ -244,6 +244,7 @@ ul {
 }
 
 .social-title {
+    margin: 0 0 16px;
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;

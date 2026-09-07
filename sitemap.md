@@ -6,6 +6,7 @@
 
 - [Página inicial](https://ronanrodrigo.dev/): perfil profissional e resumo de experiência.
 - [Guia de navegação para agentes](https://ronanrodrigo.dev/agent-guide.md): fluxo de consulta, escopo e limitações do site.
+- [Sobre o Notes](https://ronanrodrigo.dev/notes/about/): quem mantém as notas e como entrar em contato.
 - [Experiência](https://ronanrodrigo.dev/#experience): histórico profissional.
 - [Formação](https://ronanrodrigo.dev/#education): educação e formação acadêmica.
 - [Publicações](https://ronanrodrigo.dev/#publications): artigos técnicos.
@@ -22,6 +23,8 @@
 ## Contato e recursos
 
 - [Falar com Ronan](https://ronanrodrigo.dev/live): canais de contato.
+- [Contato do Notes](https://ronanrodrigo.dev/notes/contact/): canais para falar com Ronan.
+- [Privacidade do Notes](https://ronanrodrigo.dev/notes/privacy/): como o site trata dados de visitantes.
 - [Univille](https://ronanrodrigo.dev/univille): página independente de recursos.
 - [Sitemap XML](https://ronanrodrigo.dev/sitemap.xml): versão XML deste mapa.
 - [Robots](https://ronanrodrigo.dev/robots.txt): regras de rastreamento.
