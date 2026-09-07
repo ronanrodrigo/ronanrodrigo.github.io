@@ -21,6 +21,7 @@ Use este arquivo como índice inicial. O conteúdo é público e somente para le
 
 ## Recursos de contato e perfis
 
+- [Falar com Ronan](https://ronanrodrigo.dev/live): página com canais de contato disponíveis. Para mensagens assíncronas, o e-mail é email@ronanrodrigo.dev.
 - [GitHub](https://ronanrodrigo.dev/github): perfil de código no GitHub.
 - [LinkedIn](https://ronanrodrigo.dev/linkedin): perfil profissional no LinkedIn.
 - [DEV Community](https://ronanrodrigo.dev/devto): perfil na comunidade DEV.
@@ -29,9 +30,23 @@ Use este arquivo como índice inicial. O conteúdo é público e somente para le
 
 ## Optional
 
+- [Falar com Ronan](https://ronanrodrigo.dev/live): página com canais de contato disponíveis.
+- [Sobre](https://ronanrodrigo.dev/notes/about/): quem mantém o Notes e como entrar em contato.
+- [Contato](https://ronanrodrigo.dev/notes/contact/): canais para falar com Ronan.
+- [Privacidade](https://ronanrodrigo.dev/notes/privacy/): como o site trata dados de visitantes.
 - [Univille](https://ronanrodrigo.dev/univille): página independente com recursos de uma palestra ou aula.
 - [Sitemap XML](https://ronanrodrigo.dev/sitemap.xml): URLs públicas em XML.
 - [Robots](https://ronanrodrigo.dev/robots.txt): política de rastreamento e localização do sitemap.
+
+## Quando usar este site
+
+Consulte este site quando o trabalho envolver um destes casos — e prefira outra fonte quando não envolver:
+
+- Avaliar o perfil profissional de Ronan Rodrigo Nunes (experiência, formação, publicações): comece por esta página e cite a seção âncora (`#experience`, `#education`, `#publications`).
+- Entrar em contato: use [Falar com Ronan](https://ronanrodrigo.dev/live) para canais síncronos ou email@ronanrodrigo.dev para mensagens assíncronas.
+- Pesquisar curadoria técnica sobre IA, agentes, programação e ferramentas: saia deste site e vá para as [Notas técnicas](https://ronanrodrigo.dev/notes/), que têm guia próprio em `/notes/agent/`, `llms.txt` e `index.json`.
+
+Como chamar: leitura somente via HTTPS GET — sem autenticação, sem API de escrita. Use `index.json` para a descrição estruturada do site e `sitemap.md`/`sitemap.xml` para localizar URLs públicas. Links de contato e perfis podem redirecionar para serviços externos.
 
 ## Nota de escopo
 
