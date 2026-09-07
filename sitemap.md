@@ -5,6 +5,9 @@
 ## Perfil
 
 - [Página inicial](https://ronanrodrigo.dev/): perfil profissional e resumo de experiência.
+- [Sobre](https://ronanrodrigo.dev/about): quem é Ronan Rodrigo Nunes e como entrar em contato.
+- [Contato](https://ronanrodrigo.dev/contact): canais de contato e e-mail.
+- [Privacidade](https://ronanrodrigo.dev/privacy): como o site trata dados de visitantes.
 - [Guia de navegação para agentes](https://ronanrodrigo.dev/agent-guide.md): fluxo de consulta, escopo e limitações do site.
 - [Sobre o Notes](https://ronanrodrigo.dev/notes/about/): quem mantém as notas e como entrar em contato.
 - [Experiência](https://ronanrodrigo.dev/#experience): histórico profissional.
