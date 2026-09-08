@@ -1,3 +1,9 @@
+---
+title: Ronan Rodrigo Nunes — Principal Software Engineer
+description: Markdown mirror of the homepage profiling Ronan Rodrigo Nunes as a Principal Software Engineer.
+canonical: https://ronanrodrigo.dev/
+last-updated: 2026-09-08
+---
 # Ronan Rodrigo Nunes — Principal Software Engineer
 
 > Markdown mirror of <https://ronanrodrigo.dev/> for agents and text-mode readers.

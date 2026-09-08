@@ -1,3 +1,9 @@
+---
+title: Privacy — ronanrodrigo.dev
+description: How this static personal site handles visitor data, analytics and hosting logs.
+canonical: https://ronanrodrigo.dev/privacy
+last-updated: 2026-09-08
+---
 # Privacy — ronanrodrigo.dev
 
 > Markdown mirror of <https://ronanrodrigo.dev/privacy> for agents and text-mode readers.

@@ -1,3 +1,9 @@
+---
+title: Contact Ronan Rodrigo Nunes
+description: Contact channels for Ronan Rodrigo Nunes, including the Talk to Ronan page and email.
+canonical: https://ronanrodrigo.dev/contact
+last-updated: 2026-09-08
+---
 # Contact Ronan Rodrigo Nunes
 
 > Markdown mirror of <https://ronanrodrigo.dev/contact> for agents and text-mode readers.

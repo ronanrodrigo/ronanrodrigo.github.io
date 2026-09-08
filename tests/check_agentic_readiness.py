@@ -15,7 +15,7 @@ Checa nos arquivos do repositório (sem rede):
 9. rel=alternate text/markdown em index/about/contact/privacy.html.
 10. og:site_name contém 'Ronan Rodrigo Nunes' em index/about/contact/privacy.html.
 11. llms.txt e agent-guide.md contêm 'When to use' (EN).
-12. 404.html <pre> contém sitemap.xml e agent-guide.
+12. 404.html <pre> contém sitemap.xml e agent-guide, markdown-first (<pre> antes de <ul>).
 """
 
 from __future__ import annotations
@@ -155,6 +155,11 @@ def main() -> int:
     check("404.html tem <pre>", bool(m))
     check("404.html <pre> contém sitemap.xml", "sitemap.xml" in pre)
     check("404.html <pre> contém agent-guide", "agent-guide" in pre)
+    pre_pos = body404.find("<pre")
+    ul_pos = body404.find("<ul")
+    check("404.html markdown-first (<pre> antes de <ul>)",
+          pre_pos != -1 and ul_pos != -1 and pre_pos < ul_pos,
+          f"pre={pre_pos} ul={ul_pos}")
 
     print(f"\n{len(FAILURES)} falha(s)." if FAILURES else "\nTudo certo.")
     return 1 if FAILURES else 0

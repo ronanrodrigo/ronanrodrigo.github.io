@@ -1,3 +1,9 @@
+---
+title: Mapa do site
+description: Indice Markdown das paginas publicas e dos recursos tecnicos do site.
+canonical: https://ronanrodrigo.dev/sitemap.md
+last-updated: 2026-09-08
+---
 # Mapa do site
 
 > Índice Markdown das páginas públicas de Ronan Rodrigo Nunes e dos recursos técnicos associados.
