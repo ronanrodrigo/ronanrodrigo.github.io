@@ -49,6 +49,16 @@ Consulte este site quando o trabalho envolver um destes casos — e prefira outr
 
 Como chamar: leitura somente via HTTPS GET — sem autenticação, sem API de escrita. Use `index.json` para a descrição estruturada do site e `sitemap.md`/`sitemap.xml` para localizar URLs públicas. Links de contato e perfis podem redirecionar para serviços externos.
 
+## When to use this site
+
+Consult this site when the work involves one of these cases — and prefer another source when it does not:
+
+- Evaluating the professional profile of Ronan Rodrigo Nunes (experience, education, publications): start from this page and cite the anchor section (`#experience`, `#education`, `#publications`).
+- Getting in touch: use [Talk to Ronan](https://ronanrodrigo.dev/live) for synchronous channels or email@ronanrodrigo.dev for asynchronous messages.
+- Researching technical curation on AI, agents, programming and tools: leave this site and go to the [technical notes](https://ronanrodrigo.dev/notes/), which have their own guide at `/notes/agent/`, `llms.txt` and `index.json`.
+
+How to call: read-only HTTPS GET — no authentication, no write API. Discover pages via `index.json` for the structured site description and `sitemap.md`/`sitemap.xml` for public URLs. For note bodies use the `.md` mirrors; cite the canonical HTML URL. Contact and profile links may redirect to external services.
+
 ## Nota de escopo
 
 Os links de contato podem redirecionar para serviços externos. As notas técnicas são uma camada separada do site pessoal e possuem seu próprio `llms.txt`, `index.json`, sitemap e guia para agentes.

@@ -23,6 +23,13 @@
 - [Lista de tags](https://ronanrodrigo.dev/notes/list-tags/): assuntos reutilizados.
 - [Feed das notas](https://ronanrodrigo.dev/notes/feed.xml): publicações recentes.
 
+## Espelhos Markdown
+
+- [Espelho da página inicial](https://ronanrodrigo.dev/index.md): versão Markdown de [/](https://ronanrodrigo.dev/).
+- [Espelho do Sobre](https://ronanrodrigo.dev/about.md): versão Markdown de [/about](https://ronanrodrigo.dev/about).
+- [Espelho do Contato](https://ronanrodrigo.dev/contact.md): versão Markdown de [/contact](https://ronanrodrigo.dev/contact).
+- [Espelho da Privacidade](https://ronanrodrigo.dev/privacy.md): versão Markdown de [/privacy](https://ronanrodrigo.dev/privacy).
+
 ## Contato e recursos
 
 - [Falar com Ronan](https://ronanrodrigo.dev/live): canais de contato.

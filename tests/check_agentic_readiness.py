@@ -11,6 +11,11 @@ Checa nos arquivos do repositório (sem rede):
 5. about.html / contact.html / privacy.html com 500+ caracteres de texto cada.
 6. sitemap.xml e sitemap.md incluem about/contact/privacy.
 7. index.json válido com contato.
+8. .md mirrors (index/about/contact/privacy) existem e citam canonical.
+9. rel=alternate text/markdown em index/about/contact/privacy.html.
+10. og:site_name contém 'Ronan Rodrigo Nunes' em index/about/contact/privacy.html.
+11. llms.txt e agent-guide.md contêm 'When to use' (EN).
+12. 404.html <pre> contém sitemap.xml e agent-guide.
 """
 
 from __future__ import annotations
@@ -114,6 +119,42 @@ def main() -> int:
               f"keys: {sorted(res.keys())}")
     except Exception as e:
         check("index.json válido com contato", False, str(e)[:100])
+
+    # 8. .md mirrors existem e citam canonical
+    for name in ("index.md", "about.md", "contact.md", "privacy.md"):
+        p = root / name
+        body = p.read_text(encoding="utf-8") if p.exists() else ""
+        check(f"{name} existe", p.exists())
+        check(f"{name} cita canonical", "anonical" in body, f"len={len(body)}")
+
+    # 9. rel=alternate text/markdown nas páginas principais
+    for name in ("index.html", "about.html", "contact.html", "privacy.html"):
+        p = root / name
+        html = p.read_text(encoding="utf-8") if p.exists() else ""
+        head = html[: html.lower().find("</head>")]
+        has_alt = 'rel="alternate"' in head and "text/markdown" in head
+        check(f"{name}: rel=alternate text/markdown", has_alt)
+
+    # 10. og:site_name contém 'Ronan Rodrigo Nunes'
+    for name in ("index.html", "about.html", "contact.html", "privacy.html"):
+        p = root / name
+        html = p.read_text(encoding="utf-8") if p.exists() else ""
+        head = html[: html.lower().find("</head>")]
+        m = re.search(r'og:site_name[^>]*content="([^"]*)"', head)
+        check(f"{name}: og:site_name Ronan Rodrigo Nunes",
+              bool(m and "Ronan Rodrigo Nunes" in m.group(1)),
+              f"content={m.group(1) if m else 'ausente'}")
+
+    # 11. 'When to use' (EN) em llms.txt e agent-guide.md
+    check("llms.txt: When to use (EN)", "When to use" in llms)
+    check("agent-guide.md: When to use (EN)", "When to use" in guide)
+
+    # 12. 404.html <pre> contém sitemap.xml e agent-guide
+    m = re.search(r"<pre[^>]*>(.*?)</pre>", body404, re.S)
+    pre = m.group(1) if m else ""
+    check("404.html tem <pre>", bool(m))
+    check("404.html <pre> contém sitemap.xml", "sitemap.xml" in pre)
+    check("404.html <pre> contém agent-guide", "agent-guide" in pre)
 
     print(f"\n{len(FAILURES)} falha(s)." if FAILURES else "\nTudo certo.")
     return 1 if FAILURES else 0
