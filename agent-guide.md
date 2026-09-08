@@ -1,3 +1,9 @@
+---
+title: Guia de navegação para agentes
+description: Guia de navegacao do site pessoal para agentes, com fluxo de consulta e escopo.
+canonical: https://ronanrodrigo.dev/agent-guide.md
+last-updated: 2026-09-08
+---
 # Guia de navegação para agentes
 
 > Este site é o perfil profissional de Ronan Rodrigo Nunes. A coleção de notas técnicas possui um guia separado em `/notes/agent/`.

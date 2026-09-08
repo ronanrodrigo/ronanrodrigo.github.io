@@ -1,3 +1,9 @@
+---
+title: About Ronan Rodrigo Nunes
+description: Professional background of Ronan Rodrigo Nunes across mobile, backend and platform engineering.
+canonical: https://ronanrodrigo.dev/about
+last-updated: 2026-09-08
+---
 # About Ronan Rodrigo Nunes
 
 > Markdown mirror of <https://ronanrodrigo.dev/about> for agents and text-mode readers.
